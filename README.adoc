@@ -1,4 +1,4 @@
-# plugin-cordoba-test
+= plugin-cordoba-test
 
 to use it 
 
