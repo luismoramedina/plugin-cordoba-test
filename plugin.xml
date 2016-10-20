@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+	id="com.atsistemas.plugin.testplugin"
+	version="0.1.0">
+	
+	<name>TestPlugin</name>
+	<description>...</description>
+	<license>MIT</license>
+	<keywords>phonegap, test</keywords>
+	
+	<js-module src="www/testplugin.js" name="TestPlugin">
+		<clobbers target="testplugin" />
+	</js-module>
+	<!-- android -->
+	<platform name="android">
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="testplugin">
+				<param name="android-package" value="com.atsistemas.plugin.testplugin.TestPlugin"/>
+			</feature>
+		</config-file>
+		<source-file src="src/android/TestPlugin.java" target-dir="src/com/atsistemas/plugin/testplugin" />
+	</platform>
+</plugin>
